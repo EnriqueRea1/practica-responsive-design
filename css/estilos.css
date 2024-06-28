@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table{
+    border: 3px solid darkcyan;
+    width: 80%;
+    border-spacing: 0px;
+    border-radius: 10px;
+}
+
+th{
+    background-color: darkcyan;
+    color: white;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid darkcyan;
+}
+
+tr:nth-child(odd){/*even*/
+    background-color: cadetblue;
+}
+
+.description{
+    width: 40%;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-top: 22px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border: 3px solid darkcyan;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+row:nth-child(odd){/*even*/
+    background-color: cadetblue;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: darkcyan;
+    color: white;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.cell1 {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+.cell2 {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.cell1:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cell2:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@media (min-width: 1170px) and ( max-width: 2000px){
+    .container {
+      display: none;
+    .row {
+        border-bottom: none;
+    }
+    .cell {
+        flex: 1;
+        padding: 10px;
+    }
+    }
+  }
+
+    @media (min-width: 300px) and ( max-width: 1169px){
+    .contenedor {
+      display: none;
+    .row {
+        border-bottom: none;
+    }
+    .cell {
+        flex: 1;
+        padding: 10px;
+    }
+    }
+  }
+
+
